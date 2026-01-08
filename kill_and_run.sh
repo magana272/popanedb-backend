@@ -1,0 +1,1 @@
+pkill -f "uvicorn src.main:app" 2>/dev/null; sleep 1; ./run.sh &
