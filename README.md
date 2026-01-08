@@ -25,7 +25,7 @@ venv\\Scripts\\activate
 
 ```bash
 # Quick install (base requirements)
-pip install -r requirements.txt
+pip install -r requirements/base.txt
 
 # Or for development (includes testing tools)
 pip install -r requirements/dev.txt
@@ -51,14 +51,7 @@ PORT=8000
 ### 4. Run the Server
 
 ```bash
-# Using the run script
-./run.sh
-
-# Or manually with uvicorn
 uvicorn src.main:app --host 0.0.0.0 --port 8000 --workers 4
-
-# Or using server.py
-python server.py
 ```
 
 The API will be available at `http://localhost:8000`
