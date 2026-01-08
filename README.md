@@ -43,6 +43,7 @@ APP_NAME=POPANE API
 APP_VERSION=1.0.0
 ENVIRONMENT=DEVELOPMENT
 DEBUG=True
+DATABASE_DIR=\Users\super_grool\Desktop\popanebackend\popanedb-backend\db\
 DATABASE_PATH=/path/to/popane_emotion.db
 HOST=0.0.0.0
 PORT=8000
@@ -51,6 +52,11 @@ PORT=8000
 ### 4. Run the Server
 
 ```bash
+
+./run.sh
+
+# Or directly with Uvicorn
+
 uvicorn src.main:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 
